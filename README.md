@@ -1,29 +1,3 @@
-Automatización de Pruebas Nequi APP Colombia
-
-Descripción y contexto
-
-Nequi es una aplicación para manejar la plata desde el celular de forma fácil y en momentos cotidianos.
-
-Mantras en Nequi
-
-Cotidiano:
-Nequi acompaña a las personas día a día en su bolsillo con una oferta
-relevante en su vida cotidiana. Una oferta sencilla pero que querrán
-usar todos los días.
-
-Flexible:
-Nequi no viene con reglas ni instrucciones de uso, cualquiera puede usar Nequi como quiera. Además, ante cualquier imprevisto Nequi siempre estará ahí para plantear alternativas.
-
-Responsable:
-Todos los servicios de Nequi pretenden ayudar a las personas a organizarse mejor con herramientas más simples.
-
-Sin ataduras:
-Todos los servicios de Nequi son sin compromiso, se pueden agregar o quitar servicios según se necesitan.
-
-
-Resumen de codificación
-
-
 El framework
 
 Screenplay (The Journey Patter o patrón de viaje)
