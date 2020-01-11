@@ -38,3 +38,4 @@ Ubicarse en la carpeta del proyecto en una consola y ejecutar el comando:
 
 La evidencia generada por la ejecución podrá ser consultada en la carpeta target haciendo búsqueda del archivo index.html
 # AppiumScreenplay
+# AppiumScreenplay
