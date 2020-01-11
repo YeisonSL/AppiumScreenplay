@@ -1,9 +1,9 @@
-package co.com.nequi.interaction;
+package interaction;
 
-import co.com.nequi.tasks.generic.WaitFor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.targets.Target;
+import tasksgeneric.WaitFor;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 

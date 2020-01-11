@@ -23,10 +23,6 @@ Un proyecto donde se ejemplifica el uso del patrón serenity screenplay  con cuc
 Estrategia de automatización de pruebas de aceptación:
 Se planteó automatizar el desatraso de los flujos críticos de negocio como apoyo en la regresión para las constantes salidas a producción.
 
-El backend Finacle se encuentra en infraestructura de Bancolombia y los demás componentes son administrados con Pragma en servicios de AWS
-a continuación enlace a esquema de arquitectura Nequi
- (https://grupobancolombia.visualstudio.com/b267af7c-3233-4ad1-97b3-91083943100d/_apis/git/repositories/1b927269-b4fe-422e-bbb7-6c60f64a9938/Items?path=%2F.attachments%2FArquitectura%20general%20NEQUI-34b6c5fe-d04d-4443-bf79-aa300d6fd11a.pptx&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1)
-
 
 Requerimientos
 Para correr el proyecto se necesita Java JDK 1.8 y Gradle preferiblemente con la versión 4.8.1
@@ -38,4 +34,4 @@ Ubicarse en la carpeta del proyecto en una consola y ejecutar el comando:
 
 La evidencia generada por la ejecución podrá ser consultada en la carpeta target haciendo búsqueda del archivo index.html
 # AppiumScreenplay
-# AppiumScreenplay
+

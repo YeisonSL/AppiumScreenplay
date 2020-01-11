@@ -1,4 +1,4 @@
-package co.com.nequi.runner;
+package runner;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         features = "src/test/resources/feature/Login.feature",
-        glue = {"co.com.nequi.stepdefinitions"},
+        glue = {"stepdefinitions"},
         snippets = SnippetType.CAMELCASE,
         tags = "@Login"
 )

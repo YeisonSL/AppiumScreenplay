@@ -1,20 +1,15 @@
-package co.com.nequi.stepdefinitions;
+package stepdefinitions;
 
-import co.com.nequi.exceptions.LoginException;
-import co.com.nequi.exceptions.ResultNotWaitedException;
-import co.com.nequi.model.LoginModel;
-import co.com.nequi.questions.TheResult;
-import co.com.nequi.tasks.*;
 import cucumber.api.java.Before;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import net.serenitybdd.screenplay.GivenWhenThen;
+import exceptions.ResultNotWaitedException;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import questions.TheResult;
+import tasks.*;
 
-import static co.com.nequi.exceptions.LoginException.FAILED_LOGIN;
-
+import static exceptions.LoginException.FAILED_LOGIN;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
@@ -23,7 +18,7 @@ import static org.hamcrest.CoreMatchers.equalTo;
 
 
 
-public class LoginNequiStepDefinitions {
+public class LoginStepDefinitions {
 
 
     @Before
@@ -38,7 +33,8 @@ public class LoginNequiStepDefinitions {
 
     @Then("^you should see the home page$")
     public void youShouldSeeTheHome() throws Throwable {
-        //theActorInTheSpotlight().should(GivenWhenThen.seeThat(TheHomePage.isVisible()));
+        theActorInTheSpotlight().should(seeThat(TheResult.is(), equalTo(true))
+                .orComplainWith(ResultNotWaitedException.class, FAILED_LOGIN));
     }
 
 }

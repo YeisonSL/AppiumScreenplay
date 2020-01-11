@@ -1,7 +1,6 @@
-package co.com.nequi.questions;
+package questions;
 
-import co.com.nequi.exceptions.ResultNotWaitedException;
-import co.com.nequi.model.LoginModel;
+import exceptions.ResultNotWaitedException;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
@@ -17,7 +16,7 @@ public class TheResult implements Question<Boolean> {
             actor.attemptsTo();
             return true;
         } catch (ResultNotWaitedException ex) {
-            LOGGER.log(Level.SEVERE, "an error ocurred while attempting to Login Nequi with user: "  , ex);
+            LOGGER.log(Level.SEVERE, "no se pudo iniciar la app: "  , ex);
             return false;
         }
 

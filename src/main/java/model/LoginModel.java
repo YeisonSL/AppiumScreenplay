@@ -1,4 +1,4 @@
-package co.com.nequi.model;
+package model;
 
 public class LoginModel {
 

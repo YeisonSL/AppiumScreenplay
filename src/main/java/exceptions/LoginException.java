@@ -1,4 +1,4 @@
-package co.com.nequi.exceptions;
+package exceptions;
 
 public class LoginException extends AssertionError {
 

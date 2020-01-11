@@ -1,14 +1,11 @@
-package co.com.nequi.interaction.loginactions;
+package interactionloginactions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.conditions.Check;
-import net.serenitybdd.screenplay.waits.WaitUntil;
 
-import static co.com.nequi.userinterfaces.LoginPage.ENTRY_BUTTON;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isEnabled;
+import static userinterfaces.LoginPage.ENTRY_BUTTON;
 
 public class ClickEntry implements Interaction {
 

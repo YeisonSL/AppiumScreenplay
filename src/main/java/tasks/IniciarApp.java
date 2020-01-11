@@ -1,11 +1,12 @@
-package co.com.nequi.tasks;
+package tasks;
 
-import co.com.nequi.interaction.loginactions.*;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.thucydides.core.annotations.Step;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
+
+import interactionloginactions.*;
 
 
 public class IniciarApp implements Task {
@@ -20,16 +21,12 @@ public class IniciarApp implements Task {
     }
 
     @Override
-    @Step("{0} attemps iniciar app")
+    @Step("{0} attemps iniciar app e iniciar session")
     public <T extends Actor> void performAs(T actor) {
-    	System.out.println("inicari app");
-        actor.attemptsTo(WaitApp.initialized());
-        System.out.println("LLegue aqui");
+    	actor.attemptsTo(WaitApp.initialized());
         actor.attemptsTo(CheckNumberBox.isVisible());
         actor.attemptsTo(IngesarCrdenciales.login(user, pass));
-        //actor.attemptsTo(Enter.theValue(pass).into(TEXT_PASSS));
-        //actor.attemptsTo(ClickEntry.button());
-      
+     
               }
 
 //    public static IniciarApp ok(String user, String pass) {

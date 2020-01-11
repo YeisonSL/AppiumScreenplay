@@ -1,4 +1,4 @@
-package co.com.nequi.tasks.generic;
+package tasksgeneric;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
